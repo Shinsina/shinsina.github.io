@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Jake Collins">
+        <meta name="description" content="Project Page for Slinger Showdown">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <title>Slinger Showdown</title>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>Slinger Showdown</h1>
+            <p>A simple top down checkpoint based arcade racer built using Pygame</p>
+        </div>
+
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-sm-4" align = left>
+                    <h2>About The Game</h2>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><img src="GameManual.png" class="img-fluid" alt="Responsive image"></button>
+                    <div id="myModal" class="modal fade" tabindex="0" role=dialog>
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="GameManual.png" class="img-fluid" alt="Responsive image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-sm-4">
+                    <h2>Gameplay Demo</h2>
+                    <p align = left> <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="Gameplay Demo.mp4" allowfullscreen></iframe>
+                      </div>
+                    </p>
+
+                </div>
+                <div class="col-sm-4">
+                    <h2 align = "left">Breakthrough</h2>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2"><img src="Breakthrough.png" class="img-fluid" alt="Responsive image"></button>
+                    <div id="myModal2" class="modal fade" tabindex="0" role=dialog>
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="Breakthrough.png" class="img-fluid" alt="Responsive image">
+                                    <p>This is the update method for the car onscreen, the "breakthrough" here was solving how to do collision detection. One coordinate direction (X or Y) is verified as colliding 
+                                        and then whatever one was NOT verified as colliding is then set to the appropriate value. This alongside the self.angle calculation utilizing a normal vector of the movement 
+                                        vector by which is based on the x and y coordinate change between each checkpoint results in the car traveling around the track between the checkpoints in the desired motion.
+                                        Taking this "angle" of a mathematics approach to problem solving I have found be very helpful in solving many issues I have faced via programming in my personal projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Footer -->
+        <footer class="page-footer font-small">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" align = "center">
+                <a href="index.html">Return to Home Page</a>
+                <br>&nbsp;Contact Information:
+                <br>&nbsp;E-Mail: <a href = "mailto:shinsina@att.net">shinsina@att.net</a> 
+                <br>&nbsp;<a href="Resume%20(CS-290).pdf" target="_blank">Resume</a>
+                <br><a href="https://github.com/Shinsina?tab=repositories" class="fa fa-github"></a>
+                <br><a href="https://www.linkedin.com/in/jake-collins-6a3768198" class="fa fa-linkedin"></a>
+            </div>
+
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+-->
+    </body>
+</html>
