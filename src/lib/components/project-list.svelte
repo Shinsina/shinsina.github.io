@@ -6,7 +6,7 @@
       <br />Ausick
       <br />A marketing app built using Vue (with TypeScript), Tailwind, Express, GraphQL and
       MongoDB
-      <a href="https://github.com/Shinsina/Treeze" target="_blank" rel="noopener noreferrer"
+      <a href="https://github.com/Shinsina/Ausick" target="_blank" rel="noopener noreferrer"
         >&nbsp;Source Code</a
       >
       <br />
