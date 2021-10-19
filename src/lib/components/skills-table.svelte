@@ -1,0 +1,43 @@
+<h2>Skills</h2>
+<table class="table lead table-bordered">
+	<tr>
+		<th>Web-Oriented</th>
+		<th>Frameworks</th>
+		<th>Server-Side</th>
+	</tr>
+	<tr>
+		<td>HTML5</td>
+		<td>Svelte</td>
+		<td>MongoDB</td>
+	</tr>
+	<tr>
+		<td>JavaScript</td>
+		<td>Marko</td>
+		<td>Node.js</td>
+	</tr>
+	<tr>
+		<td>TypeScript</td>
+		<td>React</td>
+		<td>Firebase</td>
+	</tr>
+	<tr>
+		<td>CSS</td>
+		<td>Vue</td>
+		<td>GraphQL</td>
+	</tr>
+	<tr>
+		<td>SASS</td>
+		<td>Angular</td>
+		<td>SQL</td>
+	</tr>
+	<tr>
+		<th>Other</th>
+		<td>Tailwind</td>
+		<td>AWS S3</td>
+	</tr>
+	<tr>
+		<td>Python</td>
+		<td>Bootstrap</td>
+		<td>Docker</td>
+	</tr>
+</table>
