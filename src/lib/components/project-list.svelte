@@ -9,7 +9,6 @@
       <a href="https://github.com/Shinsina/Ausick" target="_blank" rel="noopener noreferrer"
         >&nbsp;Source Code</a
       >
-      <br />
       <br />FaceChat
       <br />A messaging app built using React, Tailwind and Firebase
       <a
