@@ -1,8 +1,8 @@
 <script>
-  import ContactBlock from '$lib/components/contact-block.svelte';
-  import SkillsTable from '$lib/components/skills-table.svelte';
-  import ProjectList from '$lib/components/project-list.svelte';
-  import SlingerShowdownBlock from '$lib/components/slinger-showdown-block.svelte';
+  import ContactBlock from '$lib/blocks/contact.svelte';
+  import SkillsBlock from '$lib/blocks/skills.svelte';
+  import ProjectBlock from '$lib/blocks/project.svelte';
+  import SlingerShowdownBlock from '$lib/blocks/slinger-showdown.svelte';
 </script>
 
 <div class="container-fluid">
@@ -11,11 +11,11 @@
       <ContactBlock />
     </div>
     <div class="col-8 text-center">
-      <ProjectList />
+      <ProjectBlock />
     </div>
     <div class="row">
       <div class="col text-center">
-        <SkillsTable />
+        <SkillsBlock />
       </div>
       <div class="col-8 text-center">
         <SlingerShowdownBlock />
