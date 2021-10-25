@@ -10,14 +10,14 @@
     <div class="col text-center">
       <ContactBlock />
     </div>
-    <div class="col-8 text-center">
+    <div class="col text-center">
       <ProjectBlock />
     </div>
     <div class="row">
       <div class="col text-center">
         <SkillsBlock />
       </div>
-      <div class="col-8 text-center">
+      <div class="col text-center">
         <SlingerShowdownBlock />
       </div>
     </div>
