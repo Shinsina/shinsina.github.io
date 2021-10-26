@@ -21,12 +21,12 @@
     />
     <ContactItem
       faData="fa fa-github"
-      linkValue="https://www.linkedin.com/in/jake-collins-6a3768198"
+      linkValue="https://github.com/Shinsina?tab=repositories"
       linkLabel="&nbsp;GitHub"
     />
     <ContactItem
       faData="fa fa-linkedin"
-      linkValue="https://github.com/Shinsina?tab=repositories"
+      linkValue="https://www.linkedin.com/in/jake-collins-6a3768198"
       linkLabel="&nbsp;LinkedIn"
     />
   </ul>
