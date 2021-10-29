@@ -7,7 +7,7 @@ const config = {
     adapter: adapter({}),
     paths: {
       base: '',
-      assets: '',
+      assets: ''
     },
     appDir: 'app_',
     // hydrate the <div id="svelte"> element in src/app.html
