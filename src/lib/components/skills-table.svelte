@@ -6,23 +6,25 @@
   };
 </script>
 
-<table class="table lead table-bordered">
-  <tr>
-    {#each Object.keys(skills) as skillType}
-      <th>{skillType}</th>
-    {/each}
-  </tr>
-  {#each skills['Frameworks'] as _, index}
+<div class="grid grid-cols">
+  <table class="table-fixed border-2 border-gray-700">
     <tr>
       {#each Object.keys(skills) as skillType}
-        {#if skills[skillType][index]}
-          <td>{skills[skillType][index]}</td>
-        {:else if !skills[skillType][index] && index === 5}
-          <th>Other</th>
-        {:else}
-          <td>Python</td>
-        {/if}
+        <th class="border-2 border-gray-700">{skillType}</th>
       {/each}
     </tr>
-  {/each}
-</table>
+    {#each skills['Frameworks'] as _, index}
+      <tr>
+        {#each Object.keys(skills) as skillType}
+          {#if skills[skillType][index]}
+            <td class="border-2 border-gray-700">{skills[skillType][index]}</td>
+          {:else if !skills[skillType][index] && index === 5}
+            <th class="border-2 border-gray-700">Other</th>
+          {:else}
+            <td class="border-2 border-gray-700">Python</td>
+          {/if}
+        {/each}
+      </tr>
+    {/each}
+  </table>
+</div>

@@ -2,11 +2,10 @@
   import ProjectItem from '$lib/components/project-item.svelte';
 </script>
 
-<br />
-<h2>Projects</h2>
-<div class="row">
-  <div class="col">
-    <p class="lead">
+<div class="col-span-12">
+  <h2 class="text-4xl mb-2">Projects</h2>
+  <div class="grid grid-cols-3">
+    <div class="col">
       <ProjectItem
         title="Ausick"
         description="A marketing app built using Vue (with TypeScript), Tailwind, Express, GraphQL and MongoDB"
@@ -17,10 +16,8 @@
         description="A messaging app built using React, Tailwind and Firebase"
         sourceCodeLink="https://github.com/Shinsina/CS-458-Chat-Application"
       />
-    </p>
-  </div>
-  <div class="col">
-    <p class="lead">
+    </div>
+    <div class="col">
       <ProjectItem
         title="Treeze"
         description="A blog app built using React, Tailwind and Firebase"
@@ -32,10 +29,8 @@
         description="Various utility functions utilizing Node.js"
         sourceCodeLink="https://github.com/Shinsina/Shinsina-Utilities"
       />
-    </p>
-  </div>
-  <div class="col">
-    <p class="lead">
+    </div>
+    <div class="col">
       <ProjectItem
         title="The Living Log"
         description="A web forum built using Django and Bootstrap"
@@ -48,6 +43,6 @@
         description="Programming in Game Engines final project built using Pygame"
         sourceCodeLink="https://github.com/Shinsina/Slinger-Showdown"
       />
-    </p>
+    </div>
   </div>
 </div>

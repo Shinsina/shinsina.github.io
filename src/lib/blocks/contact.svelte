@@ -2,13 +2,13 @@
   import ContactItem from '$lib/components/contact-item.svelte';
 </script>
 
-<div class="jumbotron bg-transparent jumbotron-fluid">
-  <h1>Jake Collins</h1>
-  <p class="lead">
+<div class="col-span-12 pt-20">
+  <h1 class="text-7xl mb-2">Jake Collins</h1>
+  <p class="text-gray-400 text-lg my-3">
     Emerging full-stack engineer, providing creative, efficient, and effective solutions to common
     problems.
   </p>
-  <ul class="nav justify-content-center lead">
+  <div class="grid grid-cols-4">
     <ContactItem
       faData="fa fa-envelope"
       linkValue="mailto:shinsina@att.net"
@@ -29,5 +29,5 @@
       linkValue="https://www.linkedin.com/in/jake-collins-6a3768198"
       linkLabel="&nbsp;LinkedIn"
     />
-  </ul>
+  </div>
 </div>
