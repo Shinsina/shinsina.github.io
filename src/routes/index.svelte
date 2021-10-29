@@ -1,4 +1,5 @@
 <script>
+  import '../app.css';
   import ContactBlock from '$lib/blocks/contact.svelte';
   import ProjectBlock from '$lib/blocks/project.svelte';
   import SkillsBlock from '$lib/blocks/skills.svelte';
