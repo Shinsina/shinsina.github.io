@@ -2,7 +2,7 @@
   import ProjectItem from '$lib/components/project-item.svelte';
 </script>
 
-<div class="col-span-12">
+<div class="col-span-12 bg-gray-900">
   <h2 class="text-4xl mb-2">Projects</h2>
   <div class="grid grid-cols-3">
     <div class="col">
