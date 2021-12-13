@@ -4,11 +4,11 @@
 
 <div class="col-span-12 bg-gray-900">
   <h2 class="text-4xl mb-2">Projects</h2>
-  <div class="grid grid-cols-3">
+  <div class="grid sm:grid-cols-1 md:grid-cols-3">
     <div class="col">
       <ProjectItem
         title="Ausick"
-        description="A marketing app built using Vue (with TypeScript), Tailwind, Express, GraphQL and MongoDB"
+        description="A marketing app built using Vue, Tailwind, Express, GraphQL and MongoDB"
         sourceCodeLink="https://github.com/Shinsina/Ausick"
       />
       <ProjectItem
@@ -23,7 +23,6 @@
         description="A blog app built using React, Tailwind and Firebase"
         sourceCodeLink="https://github.com/Shinsina/Treeze"
       />
-      <br />
       <ProjectItem
         title="Shinsina Utilities"
         description="Various utility functions utilizing Node.js"
@@ -37,7 +36,6 @@
         projectLink="https://the-living-log.herokuapp.com/"
         sourceCodeLink="https://github.com/Shinsina/The-Living-Log"
       />
-      <br />
       <ProjectItem
         title="Slinger Showdown"
         description="Programming in Game Engines final project built using Pygame"

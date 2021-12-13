@@ -5,4 +5,6 @@
   const target = targetValue ? targetValue : '_blank';
 </script>
 
-<a class={className} href={linkValue} {target}>{linkLabel}</a>
+<div>
+  <a class={className} href={linkValue} {target}>{linkLabel}</a>
+</div>

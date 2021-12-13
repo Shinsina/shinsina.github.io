@@ -8,7 +8,7 @@
     Emerging full-stack engineer, providing creative, efficient, and effective solutions to common
     problems.
   </p>
-  <div class="grid grid-cols-4">
+  <div class="grid md:grid-cols-4">
     <ContactItem
       faData="fa fa-envelope"
       linkValue="mailto:shinsina@att.net"
