@@ -10,43 +10,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <title>Jake Collins</title>
-    
-
-		
-
-		<link rel="modulepreload" href="/app_/start-337b79ea.js">
-		<link rel="modulepreload" href="/app_/chunks/vendor-f3548c02.js">
-		<link rel="modulepreload" href="/app_/layout.svelte-57613c4e.js">
-		<link rel="modulepreload" href="/app_/pages/index.svelte-bfbffc9e.js">
-		<link rel="stylesheet" href="/app_/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/app_/assets/pages/index.svelte-52d166e8.css">
-
-		<script type="module">
-			import { start } from "/app_/start-337b79ea.js";
-			start({
-				target: document.querySelector("#svelte"),
-				paths: {"base":"","assets":""},
-				session: {},
-				host: location.host,
-				route: true,
-				spa: false,
-				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/app_/layout.svelte-57613c4e.js"),
-						import("/app_/pages/index.svelte-bfbffc9e.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "\u002F",
-						query: new URLSearchParams(""),
-						params: {}
-					}
-				}
-			});
-		</script>
+    <meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/app_/assets/pages/index.svelte-37767926.css">
+	<link rel="modulepreload" href="/app_/start-e592834e.js">
+	<link rel="modulepreload" href="/app_/chunks/vendor-87b639d8.js">
+	<link rel="modulepreload" href="/app_/layout.svelte-dd076350.js">
+	<link rel="modulepreload" href="/app_/pages/index.svelte-3cb9ee42.js">
   </head>
   <body>
     <div id="svelte">
@@ -97,8 +66,26 @@
       </tr></table></div></div></div>
 
 
-
-			
-		</div>
+		<script type="module" data-hydrate="1opqhnb">
+		import { start } from "/app_/start-e592834e.js";
+		start({
+			target: document.querySelector('[data-hydrate="1opqhnb"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/app_/layout.svelte-dd076350.js"),
+						import("/app_/pages/index.svelte-3cb9ee42.js")
+				],
+				url: new URL("http://sveltekit-prerender/"),
+				params: {}
+			}
+		});
+	</script></div>
   </body>
 </html>
