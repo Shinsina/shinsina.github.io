@@ -21,7 +21,7 @@
     />
     <ContactItem
       faData="fa fa-github"
-      linkValue="https://github.com/Shinsina?tab=repositories"
+      linkValue="https://github.com/Shinsina"
       linkLabel="&nbsp;GitHub"
     />
     <ContactItem
