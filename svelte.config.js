@@ -9,7 +9,10 @@ const config = {
       base: '',
       assets: ''
     },
-    appDir: 'app_'
+    appDir: 'app_',
+    prerender: {
+      default: true
+    }
   },
 
   preprocess: [
