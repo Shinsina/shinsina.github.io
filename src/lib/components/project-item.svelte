@@ -1,5 +1,9 @@
 <script>
-  export let title, description, projectLink, sourceCodeLink, targetValue;
+  export let title = '',
+    description = '',
+    projectLink = '',
+    sourceCodeLink = '',
+    targetValue = '';
 
   const target = targetValue ? targetValue : '_blank';
 </script>
