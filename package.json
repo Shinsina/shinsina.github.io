@@ -3,16 +3,12 @@
   "version": "0.0.1",
   "scripts": {
     "build-css": "tailwindcss build app.css -o public/style.css --minify",
-    "alpinjs-dev": "npx esbuild index.js --outfile=public/bundle.js --bundle --minify",
-    "deploy": "npm run build-css && npm run alpinjs-dev && npx gh-pages -d public -t true"
+    "deploy": "npm run build-css && npx gh-pages -d public -t true"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
   },
-  "dependencies": {
-    "alpinejs": "^3.10.2",
-    "esbuild": "^0.14.38"
-  }
+  "dependencies": {}
 }
