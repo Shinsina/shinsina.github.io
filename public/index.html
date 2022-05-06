@@ -9,125 +9,195 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <script src="bundle.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid grid-cols-12">
+    <div
+      class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid grid-cols-12"
+    >
       <div class="col-span-12 pt-20">
         <h1 class="text-7xl mb-2">Jake Collins</h1>
         <p class="text-gray-400 text-lg my-3">
-          Emerging full-stack engineer, providing creative, efficient, and effective solutions to common
-          problems.
+          Emerging full-stack engineer, providing creative, efficient, and
+          effective solutions to common problems.
         </p>
-        <div class="grid md:grid-cols-4" x-data="{
-          contactItems: [{
-            className: 'text-blue-400 fa fa-envelope',
-            linkValue: 'mailto:shinsina@att.net',
-            linkLabel: '&nbsp;shinsina@att.net'
-          },
-          {
-            className: 'text-blue-400 fa fa-copy',
-            linkValue: 'Resume%20(Jake%20Collins).pdf',
-            linkLabel: '&nbsp;Resume'
-          },
-          {
-            className: 'text-blue-400 fa fa-github',
-            linkValue: 'https://github.com/Shinsina',
-            linkLabel: '&nbsp;GitHub'
-          },
-          {
-            className: 'text-blue-400 fa fa-linkedin',
-            linkValue: 'https://www.linkedin.com/in/jake-collins-6a3768198',
-            linkLabel: '&nbsp;LinkedIn'
-          }]
-        }">
-          <template x-for="item in contactItems">
-            <div class="py-1"><a x-bind:class="item.className" x-bind:href="item.linkValue" target="_blank" x-text="item.linkLabel"></a></div>
-          </template>
+        <div class="grid md:grid-cols-4">
+          <div>
+            <a
+              class="text-blue-400 fa fa-envelope"
+              href="mailto:shinsina@att.net"
+              target="_blank"
+            >
+              shinsina@att.net</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-blue-400 fa fa-copy"
+              href="Resume%20(Jake%20Collins).pdf"
+              target="_blank"
+            >
+              Resume</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-blue-400 fa fa-github"
+              href="https://github.com/Shinsina"
+              target="_blank"
+            >
+              GitHub</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-blue-400 fa fa-linkedin"
+              href="https://www.linkedin.com/in/jake-collins-6a3768198"
+              target="_blank"
+            >
+              LinkedIn</a
+            >
+          </div>
         </div>
       </div>
       <div class="col-span-12 bg-gray-900">
         <h2 class="text-4xl mb-2">Projects</h2>
-        <div class="grid sm:grid-cols-1 md:grid-cols-3" x-data="{
-          projectCols: [
-          [{
-            title: 'Ausick',
-            description: 'A marketing app built using Vue, Tailwind, Express, GraphQL and MongoDB',
-            sourceCodeLink: 'https://github.com/Shinsina/Ausick'
-
-          },
-          {
-            title: 'FaceChat',
-            description: 'A messaging app built using React, Tailwind and Firebase',
-            sourceCodeLink: 'https://github.com/Shinsina/CS-458-Chat-Application'
-          }],
-          [{
-            title: 'Treeze',
-            description: 'A blog app built using React, Tailwind and Firebase',
-            sourceCodeLink: 'https://github.com/Shinsina/Treeze'
-
-          },
-          {
-            title: 'Shinsina Utilities',
-            description: 'Various utility functions utilizing Node.js',
-            sourceCodeLink: 'https://github.com/Shinsina/Shinsina-Utilities'
-          }],
-          [{
-            title: 'The Living Log',
-            description: 'A web forum built using Django and Bootstrap',
-            sourceCodeLink: 'https://github.com/Shinsina/The-Living-Log'
-
-          },
-          {
-            title: 'Slinger Showdown',
-            description: 'Programming in Game Engines final project built using Pygame',
-            sourceCodeLink: 'https://github.com/Shinsina/Slinger-Showdown'
-          }]
-          ]
-        }">
-        <template x-for="projectCol in projectCols">
+        <div class="grid sm:grid-cols-1 md:grid-cols-3">
           <div class="col">
-            <template x-for="project in projectCol">
-              <div class="text-gray-400 py-4">
-                <div class="text-xl" x-text="project.title"></div>
-                <div class="text-md" x-text="project.description"></div>
-                <div class="text-blue-400">
-                  <a x-bind:href="project.sourceCodeLink" target="_blank">Source Code</a>
-                </div>
+            <div class="text-gray-400 py-4">
+              <div class="text-xl">Ausick</div>
+              <div class="text-md">
+                A marketing app built using Vue, Tailwind, Express, GraphQL and
+                MongoDB
               </div>
-            </template>
+              <div class="text-blue-400">
+                <a href="https://github.com/Shinsina/Ausick" target="_blank">
+                  Source Code</a
+                >
+              </div>
+            </div>
+            <div class="text-gray-400 py-4">
+              <div class="text-xl">FaceChat</div>
+              <div class="text-md">
+                A messaging app built using React, Tailwind and Firebase
+              </div>
+              <div class="text-blue-400">
+                <a
+                  href="https://github.com/Shinsina/CS-458-Chat-Application"
+                  target="_blank"
+                >
+                  Source Code</a
+                >
+              </div>
+            </div>
           </div>
-        </template>
+          <div class="col">
+            <div class="text-gray-400 py-4">
+              <div class="text-xl">Treeze</div>
+              <div class="text-md">
+                A blog app built using React, Tailwind and Firebase
+              </div>
+              <div class="text-blue-400">
+                <a href="https://github.com/Shinsina/Treeze" target="_blank">
+                  Source Code</a
+                >
+              </div>
+            </div>
+            <div class="text-gray-400 py-4">
+              <div class="text-xl">Shinsina Utilities</div>
+              <div class="text-md">
+                Various utility functions utilizing Node.js
+              </div>
+              <div class="text-blue-400">
+                <a
+                  href="https://github.com/Shinsina/Shinsina-Utilities"
+                  target="_blank"
+                >
+                  Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="text-gray-400 py-4">
+              <div class="text-xl">The Living Log</div>
+              <div class="text-md">
+                A web forum built using Django and Bootstrap
+              </div>
+              <div class="text-blue-400">
+                <a href="https://the-living-log.herokuapp.com/" target="_blank"
+                  >Project Page
+                </a>
+                <a
+                  href="https://github.com/Shinsina/The-Living-Log"
+                  target="_blank"
+                >
+                  Source Code</a
+                >
+              </div>
+            </div>
+            <div class="text-gray-400 py-4">
+              <div class="text-xl">Slinger Showdown</div>
+              <div class="text-md">
+                Programming in Game Engines final project built using Pygame
+              </div>
+              <div class="text-blue-400">
+                <a
+                  href="https://github.com/Shinsina/Slinger-Showdown"
+                  target="_blank"
+                >
+                  Source Code</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-span-12 justify-items-center bg-gray-900">
         <h2 class="text-4xl mb-2">Skills</h2>
-        <div class="grid grid-cols" x-data="{
-          skills: [
-            ['HTML5', 'Svelte', 'MongoDB'],
-            ['JavaScript', 'Marko', 'Node.js'],
-            ['TypeScript', 'React', 'Firebase'],
-            ['CSS', 'Vue', 'GraphQL'],
-            ['SASS', 'Angular', 'SQL'],
-            ['Other', 'Tailwind', 'AWS S3'],
-            ['Python', 'Bootstrap', 'Docker']
-          ]
-        }">
-          <table class="table-fixed border-2 border-gray-700" x-data="{ skillTypes: ['Web-Oriented', 'Frameworks', 'Server-Side'] }">
+        <div class="grid grid-cols">
+          <table class="table-fixed border-2 border-gray-700 text-white text-center">
             <tr>
-              <template x-for="skillType in skillTypes">
-                <th class="text-white border-2 border-gray-700 py-1" x-text="skillType"></th>
-              </template>
+              <th class="border-2 border-gray-700 py-1">Web-Oriented</th>
+              <th class="border-2 border-gray-700 py-1">Frameworks</th>
+              <th class="border-2 border-gray-700 py-1">Server-Side</th>
             </tr>
-            <template x-for="skillRow in skills">
-              <tr>
-                <template x-for="skill in skillRow">
-                  <td class="text-white text-center border-2 border-gray-700 py-1" x-text="skill"></td>
-                </template>
-              </tr>
-            </template>
+            <tr>
+              <td class="border-2 border-gray-700 py-1">HTML5</td>
+              <td class="border-2 border-gray-700 py-1">Svelte</td>
+              <td class="border-2 border-gray-700 py-1">MongoDB</td>
+            </tr>
+            <tr>
+              <td class="border-2 border-gray-700 py-1">JavaScript</td>
+              <td class="border-2 border-gray-700 py-1">Marko</td>
+              <td class="border-2 border-gray-700 py-1">Node.js</td>
+            </tr>
+            <tr>
+              <td class="border-2 border-gray-700 py-1">TypeScript</td>
+              <td class="border-2 border-gray-700 py-1">React</td>
+              <td class="border-2 border-gray-700 py-1">Firebase</td>
+            </tr>
+            <tr>
+              <td class="border-2 border-gray-700 py-1">CSS</td>
+              <td class="border-2 border-gray-700 py-1">Vue</td>
+              <td class="border-2 border-gray-700 py-1">GraphQL</td>
+            </tr>
+            <tr>
+              <td class="border-2 border-gray-700 py-1">SASS</td>
+              <td class="border-2 border-gray-700 py-1">Angular</td>
+              <td class="border-2 border-gray-700 py-1">SQL</td>
+            </tr>
+            <tr>
+              <th class="border-2 border-gray-700 py-1">Other</th>
+              <td class="border-2 border-gray-700 py-1">Tailwind</td>
+              <td class="border-2 border-gray-700 py-1">AWS S3</td>
+            </tr>
+            <tr>
+              <td class="border-2 border-gray-700 py-1">Python</td>
+              <td class="border-2 border-gray-700 py-1">Bootstrap</td>
+              <td class="border-2 border-gray-700 py-1">Docker</td>
+            </tr>
           </table>
         </div>
       </div>
