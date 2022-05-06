@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "build": "tailwindcss build app.css -o public/style.css",
-    "watch": "tailwindcss build app.css -o public/style.css -w",
-    "alpinjs-dev": "npx esbuild index.js --outfile=public/bundle.js --bundle"
+    "alpinjs-dev": "npx esbuild index.js --outfile=public/bundle.js --bundle --minify",
+    "deploy": "npm run build && npm run alpinjs-dev && npx gh-pages -d public -t true"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
