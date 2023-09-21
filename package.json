@@ -2,7 +2,7 @@
   "name": "shinsina.github.io",
   "version": "0.0.1",
   "scripts": {
-    "build-css": "tailwindcss build app.css -o public/style.css --minify",
+    "build-css": "tailwindcss build -i app.css -o public/style.css --minify",
     "deploy": "npm run build-css && npx gh-pages -d public -t true"
   },
   "devDependencies": {
