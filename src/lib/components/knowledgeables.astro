@@ -1,0 +1,32 @@
+---
+const knowledgeables = [
+  "AWS S3",
+  "Alpine",
+  "Astro",
+  "Bootstrap",
+  "CSS",
+  "Docker",
+  "GraphQL",
+  "HTML5",
+  "JavaScript",
+  "Marko",
+  "MongoDB",
+  "Node.js",
+  "Python",
+  "SASS",
+  "SQL",
+  "Svelte",
+  "Tailwind",
+  "TypeScript",
+  "Vue",
+];
+---
+
+<div>
+  <h2 class="text-4xl mb-2">Knowledgeable In</h2>
+  {
+    knowledgeables.map((knowledgeable) => (
+      <div class="text-xl text-white py-1">{knowledgeable}</div>
+    ))
+  }
+</div>

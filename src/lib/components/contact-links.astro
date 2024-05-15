@@ -1,0 +1,22 @@
+---
+const contactLinks = [
+  { href: "mailto:shinsina@att.net", label: "Email" },
+  { href: "https://github.com/Shinsina", label: "GitHub" },
+  {
+    href: "https://www.linkedin.com/in/jake-collins-6a3768198",
+    label: "LinkedIn",
+  },
+];
+---
+
+<div class="text-blue-400">
+  {
+    contactLinks.map(({ href, label }) => (
+      <span class="pr-2">
+        <a {href} target="_blank">
+          {label}
+        </a>
+      </span>
+    ))
+  }
+</div>

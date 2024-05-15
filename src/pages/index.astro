@@ -1,0 +1,27 @@
+---
+import ContactLinks from "$lib/components/contact-links.astro";
+import Knowledgeables from "$lib/components/knowledgeables.astro";
+import Projects from "$lib/components/projects.astro";
+import DefaultLayout from "$lib/layouts/default.astro";
+---
+
+<DefaultLayout>
+  <div
+    class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid lg:grid-cols-4"
+  >
+    <div class="col-span-1 bg-gray-900"></div>
+    <div class="col-span-2 pt-20 px-4">
+      <h1 class="text-7xl mb-2">Jake Collins</h1>
+      <p class="text-gray-400 text-lg my-3">
+        Emerging full-stack engineer, providing creative, efficient, and
+        effective solutions to common problems.
+      </p>
+      <ContactLinks />
+      <div class="grid md:grid-cols-2 bg-gray-900 py-4">
+        <Projects />
+        <Knowledgeables />
+      </div>
+    </div>
+    <div class="col-span-1 bg-gray-900"></div>
+  </div>
+</DefaultLayout>
