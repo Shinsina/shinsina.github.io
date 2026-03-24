@@ -1,244 +1,130 @@
 ---
 import DefaultLayout from "$lib/layouts/default.astro";
 import Image from "astro/components/Image.astro";
-import Zero from '../../assets/0.png';
-import One from '../../assets/1.png';
-import Two from '../../assets/2.png';
-import Three from '../../assets/3.png'
-import Four from '../../assets/4.png';
-import Five from '../../assets/5.png';
-import Six from '../../assets/6.png';
-import Seven from '../../assets/7.png';
-import Eight from '../../assets/8.png';
-import Nine from '../../assets/9.png';
-import Ten from '../../assets/10.png';
-import Eleven from '../../assets/11.png';
-import Twelve from '../../assets/12.png';
-import Thirteen from '../../assets/13.png';
-import Fourteen from '../../assets/14.png';
-import Fifteen from '../../assets/15.png';
-import Sixteen from '../../assets/16.png';
-import Seventeen from '../../assets/17.png';
-import Eighteen from '../../assets/18.png';
-import Nineteen from '../../assets/19.png';
-import Twenty from '../../assets/20.png';
-import TwentyOne from '../../assets/21.png';
-import TwentyTwo from '../../assets/22.png';
-import TwentyThree from '../../assets/23.png';
-import TwentyFour from '../../assets/24.png';
-import TwentyFive from '../../assets/25.png';
-import TwentySix from '../../assets/26.png';
-import TwentySeven from '../../assets/27.png';
-import TwentyEight from '../../assets/28.png';
-import TwentyNine from '../../assets/29.png';
-import Thirty from '../../assets/30.png';
-import ThirtyOne from '../../assets/31.png';
-import ThirtyTwo from '../../assets/32.png';
-import ThirtyThree from '../../assets/33.png';
-import ThirtyFour from '../../assets/34.png';
-import ThirtyFive from '../../assets/35.png';
-import ThirtySix from '../../assets/36.png';
-import ThirtySeven from '../../assets/37.png';
-import ThirtyEight from '../../assets/38.png';
-import ThirtyNine from '../../assets/39.png';
+import Me from "../../assets/me.jpg";
 ---
 
 <DefaultLayout>
   <div
-    class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid lg:grid-cols-4"
+    class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid lg:grid-cols-12"
   >
-    <div class="col-span-4 pt-20 px-4 bg-gray-900">
-      <h1 class="text-7xl mb-2">iRacing</h1>
-      <div class="grid md:grid-cols-3 bg-gray-900 py-4">
-        <div>
-          <h2 class="text-4xl mb-2">PC Specifications</h2>
-          <ul>
-            <li class="list-inside list-disc">AMD Ryzen 7 7700X</li>
-            <li class="list-inside list-disc">ASUS TUF Gaming X670E-PLUS WIFI</li>
-            <li class="list-inside list-disc">G.SKILL Flare X5 Series 32GB (2 x 16GB) DDR5 5600</li>
-            <li class="list-inside list-disc">PowerColor Hellhound Radeon RX 9070XT 16GB GDDR6</li>
-            <li class="list-inside list-disc">IceGiant ProSiphon Elite CPU Cooler</li>
-            <li class="list-inside list-disc">be quiet! Straight Power 11 1200W 80 PLUS Platinum PSU</li>
-            <li class="list-inside list-disc">Fractal Design Pop Air (Orange) Case</li>
-            <li class="list-inside list-disc">Gigabyte AORUS Gen4 1 TB SSD (Main Drive)</li>
-            <li class="list-inside list-disc">Western Digital WD_Black SN850X 4 TB (Storage Drive)</li>
-            <li class="list-inside list-disc">2 be quiet! Silent Wings PRO 4 140MM front intake fans</li>
-            <li class="list-inside list-disc">be quiet! Silent Wings 3 120mm rear exhaust fan</li>
-            <li class="list-inside list-disc">LG Internal Optical Drive</li>
+    <div class="col-span-12 pt-20 px-4 bg-gray-900">
+      <h1 class="text-7xl mb-4">Jacob Collins</h1>
+      <Image
+        class="inline-block"
+        src={Me}
+        alt="Jacob Collins"
+        width="160"
+        height="160"
+      />
+      <p class="text-gray-400 text-lg my-3">
+        Hello! I'm Jacob Collins, a wearer of many hats, a jack of all trades
+        and a master of none both on and off the virtual race track, welcome to
+        anything and everything related to me and my iRacing "career"!
+      </p>
+      <div class="grid md:grid-cols-4 bg-gray-900 py-4">
+        <div class="md:col-span-2">
+          <h2 class="text-4xl mb-4">Community Roles</h2>
+          <h3 class="text-2xl mb-2">Community Manager</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              Indy Pro 2000 - 2025 Season 2 to 2025 Season 4 (R.I.P)
+            </li>
+            <li class="list-inside list-disc">
+              USF 2000 - 2025 Season 2 to Present
+            </li>
+            <li class="list-inside list-disc">
+              JR Open Wheel Oval Challenge (JROWOC) - 2025 Season 2 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Legends Road Cup - 2025 Season 3 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT Oval - 2026 Season 1 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT Road - 2026 Season 3 to Present
+            </li>
+          </ul>
+          <h3 class="text-2xl mb-2">Host/Broadcaster (P1 Broadcasting)</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              IndyCar Open - 2025 Season 2 (Ovals Only), 2025 Season 3 to
+              Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT (Both Series) - 2025 Season 4 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT Road Series Track Guides - 2026 Season 1 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Formula Super Series (FSS) Season 4
+            </li>
+          </ul>
+          <h3 class="text-2xl mb-2">Rogue Racing</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              Driver - 2024 Season 3 Week 4 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Co-Captain - 2025 Season 3 to Present
+            </li>
+          </ul>
+          <h3 class="text-2xl mb-2">Votive Racing League</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">Driver - Season 3, Season 4</li>
+            <li class="list-inside list-disc">Coach - April 2025 to Present</li>
+          </ul>
+          <h3 class="text-2xl mb-2">Moderator</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              iRacing IndyCar Community Discord - July 2025 to Present
+            </li>
           </ul>
         </div>
-        <div>
-          <h2 class="text-4xl mb-2">Peripherials</h2>
-          <ul>
-            <li class="list-inside list-disc">WASD Keyboards VP3 61-key Keyboard (Cherry MX Clears)</li>
-            <li class="list-inside list-disc">Glorious Gaming Cloth Ergonomic Keyboard Wrist Rest</li>
-            <li class="list-inside list-disc">Steelseries Aerox 9 Wireless Mouse (Main Mouse)</li>
-            <li class="list-inside list-disc">Finalmouse Starlight-12 Phantom (FPS Mouse)</li>
-            <li class="list-inside list-disc">Steelseries QcK Heavy XXL Mousepad</li>
-            <li class="list-inside list-disc">Antlion Kimura Microphone Cable (2 Pin)</li>
-            <li class="list-inside list-disc">TRUTHEAR x Crinacle ZERO:BLUE2 In-ear Monitor</li>
-            <li class="list-inside list-disc">JCALLY JM6 Pro DAC Amp</li>
-            <li class="list-inside list-disc">Focusrite 2i4 (1st Generation) Audio Interface</li>
-            <li class="list-inside list-disc">Shure SM58 Microphone</li>
-            <li class="list-inside list-disc">Creative Sound Blaster Katana V2X Soundbar</li>
-            <li class="list-inside list-disc">AORUS FI32Q-X 32 inch 1440p 270hz Monitor</li>
-            <li class="list-inside list-disc">UPLIFT V3 Standing Desk (Bamboo top 42x24 inches)</li>
+        <div class="md:col-span-2">
+          <h2 class="text-4xl mb-2">Accolades</h2>
+          <h3 class="text-2xl mb-2">
+            iRacing USF 2000 Series Overall Champion
+          </h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">2024 Season 4</li>
+            <li class="list-inside list-disc">2025 Season 2</li>
           </ul>
-        </div>
-        <div>
-          <h2 class="text-4xl mb-2">Sim Rig</h2>
-          <ul>
-            <li class="list-inside list-disc">Trak Racer TR80 Racing Simulator MK5</li>
-            <li class="list-inside list-disc">Trak Racer GT Black Bucket Seat</li>
-            <li class="list-inside list-disc">Trak Racer Cockpit Mounted Triple Monitor Mount</li>
-            <li class="list-inside list-disc">Trak Racer TR One Wheel Deck</li>
-            <li class="list-inside list-disc">Trak Racer TR-One Universal Direct Fit Wheel Mount </li>
-            <li class="list-inside list-disc">Trak Racer Button Box / Elgato Stream Deck Mount</li>
-            <li class="list-inside list-disc">Trak Racer Table Top/Desk with Swivel Mount</li>
-            <li class="list-inside list-disc">3 HP X32 32 inch 1440p 165hz Monitor</li>
-            <li class="list-inside list-disc">3 Belkin Mouse Pad (for table top/desk 8x9 inch each)</li>
-            <li class="list-inside list-disc">Cup-Holster Cup Holder (attached to bottom of shifter mount)</li>
-            <li class="list-inside list-disc">VRS DFP20 Wheel Base (with QR Connect system)</li>
-            <li class="list-inside list-disc">VRS Pedals (with clutch, blue spring on brake)</li>
-            <li class="list-inside list-disc">Asetek Tony Kanaan Rim (with all 6 normal paddles)</li>
-            <li class="list-inside list-disc">Pineapple Grips Asetek Formula Conversion Kit</li>
-            <li class="list-inside list-disc">Fanatec NASCAR Rim</li>
-            <li class="list-inside list-disc">GSI Formula Pro Elite (FPE) V1</li>
-            <li class="list-inside list-disc">VNM Simulation Shifter</li>
-            <li class="list-inside list-disc">Elgato Stream Deck XL (iRaceIT Plugin)</li>
+          <h3 class="text-2xl mb-2">P1 Broadcasting Podium Finisher</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              IndyCar Oval Fixed 2025 Season 2 Week 5 Race 2 Atlanta - 3rd
+            </li>
+            <li class="list-inside list-disc">
+              ISRA Open Wheel Series Season 2 Round 4 Kentucky - 2nd
+            </li>
+            <li class="list-inside list-disc">
+              Votive Racing League Season 3 Round 9 Indianapolis Motor Speedway - 2nd
+            </li>
+            <li class="list-inside list-disc">
+              Votive Racing League Season 4 Round 2 Charlotte Motor Speedway - 3rd
+            </li>
           </ul>
-        </div>
-      </div>
-      <div class="flex flex-col items-center">
-        <h2 class="text-4xl mb-2">2018</h2>
-        <Image src={Zero} alt="iRacing Award" width="600" height="500" />
-        <h2 class="text-4xl mb-2">2019</h2>
-        <Image src={One} alt="iRacing Award" width="600" height="500" />
-        <h2 class="text-4xl mb-2">2020</h2>
-        <Image src={Two} alt="iRacing Award" width="600" height="500" />
-        <h2 class="text-4xl mb-2">2022</h2>
-        <Image src={Three} alt="iRacing Award" width="600" height="500" />
-      </div>
-      <div class="grid md:grid-cols-3 bg-gray-900 py-4 gap-4">
-        <div class="col-span-1 md:col-span-3">
-          <h2 class="text-4xl mb-2 text-center">2023</h2>
-        </div>
-        <div>
-          <Image src={Four} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Five} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Six} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Seven} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Eight} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Nine} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div class="col-span-1 md:col-span-3">
-          <h2 class="text-4xl mb-2 text-center">2024</h2>
-        </div>
-        <div>
-          <Image src={Ten} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Eleven} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Twelve} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Thirteen} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Fourteen} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Fifteen} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Sixteen} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Seventeen} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Eighteen} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Nineteen} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Twenty} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div class="col-span-1 md:col-span-3">
-          <h2 class="text-4xl mb-2 text-center">2025</h2>
-        </div>
-        <div>
-          <Image src={TwentyOne} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentyTwo} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentyThree} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentyFour} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentyFive} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentySix} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentySeven} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentyEight} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={TwentyNine} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={Thirty} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtyOne} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtyTwo} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtyThree} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtyFour} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtyFive} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtySix} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div class="col-span-1 md:col-span-3">
-          <h2 class="text-4xl mb-2 text-center">2026</h2>
-        </div>
-        <div>
-          <Image src={ThirtySeven} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtyEight} alt="iRacing Award" width="600" height="500" />
-        </div>
-        <div>
-          <Image src={ThirtyNine} alt="iRacing Award" width="600" height="500" />
+          <h3 class="text-2xl mb-2">Notable Overall Championship Positions</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">NASCAR Tour Modified Series Fixed 2023 Season 2 - 5th</li>
+            <li class="list-inside list-disc">Indy Pro 2000 2024 Season 4 - 4th</li>
+            <li class="list-inside list-disc">IndyCar Fixed (Fixed Sprint) 2024 Season 4 - 4th</li>
+            <li class="list-inside list-disc">IndyCar Oval Fixed 2025 Season 1 - 10th</li>
+            <li class="list-inside list-disc">Outlaw Micro Showdown 2025 Season 1 - 5th</li>
+            <li class="list-inside list-disc">USF 2000 2025 Season 1 - 3rd</li>
+            <li class="list-inside list-disc">Indy Pro 2000 2025 Season 1 - 2nd</li>
+            <li class="list-inside list-disc">IndyCar Oval Fixed 2025 Season 2 - 9th</li>
+            <li class="list-inside list-disc">Indy Pro 2000 2025 Season 3 - 5th</li>
+            <li class="list-inside list-disc">USF 2000 2025 Season 3 - 3rd</li>
+            <li class="list-inside list-disc">Legends Road Cup 2025 Season 4 - 5th</li>
+            <li class="list-inside list-disc">USF 2000 2025 Season 4 - 5th</li>
+            <li class="list-inside list-disc">Legends Road Cup 2026 Season 1 - 2nd</li>
+            <li class="list-inside list-disc">ISRA Open Wheel Series Season 2 - 3rd</li>
+            <li class="list-inside list-disc">Votive Racing League Season 3 - 4th</li>
+          </ul>
         </div>
       </div>
     </div>
