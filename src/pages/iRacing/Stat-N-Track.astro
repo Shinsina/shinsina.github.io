@@ -1,0 +1,56 @@
+---
+import DefaultLayout from "$lib/layouts/default.astro";
+import IRacingNavigation from "$lib/components/iracing-navigation.astro";
+---
+
+<DefaultLayout>
+  <div
+    class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid lg:grid-cols-4"
+  >
+    <div class="col-span-1 bg-gray-900"></div>
+    <div class="col-span-2 pt-20 px-4 bg-gray-900">
+      <h1 class="text-7xl mb-2">Stat 'N' Track</h1>
+      <IRacingNavigation />
+      <p class="text-gray-400 text-lg my-3">
+        Stat 'N' Track is a website built for being able to browse iRacing
+        driver stats per driver for official series including filters for: all
+        race sessions, race sessions by year, race sessions by car class, race
+        sessions by track, all season standings, season standings in which a
+        driver fully participated, season standings by year, season standings by
+        car class and head to head matchups against other driver(s) listed on
+        the site. My version of the site can be found <a
+          class="text-blue-400"
+          href="https://shinsina.github.io/Stat-N-Track/"
+          target="_blank">here</a
+        >.
+      </p>
+      <p class="text-gray-400 text-lg my-3">
+        Currently Stat 'N' Track is available per request in which the site
+        files will be provided via a zip folder for all driver(s) requested to
+        be included for the site. If you would like Stat 'N' Track for you and
+        your team/friends, feel free to reach out over Discord.
+      </p>
+      <p class="text-gray-400 text-lg my-3">
+        If you'd like to take a crack at building out a site for yourself
+        instructions for both the scripts to pull the data from iRacing
+        alongside generating the site can be found on GitHub:
+      </p>
+      <ul>
+        <li class="list-inside list-disc">
+          <a
+            class="text-blue-400"
+            href="https://github.com/Shinsina/iRacing-API-Scripts"
+            target="_blank">Scripts</a>
+        </li>
+        <li class="list-inside list-disc">
+          <a
+            class="text-blue-400"
+            href="https://github.com/Shinsina/Stat-N-Track"
+            target="_blank">Site</a>
+        </li>
+      </ul>
+      <div class="grid md:grid-cols-2 bg-gray-900 py-4"></div>
+    </div>
+    <div class="col-span-1 bg-gray-900"></div>
+  </div>
+</DefaultLayout>
