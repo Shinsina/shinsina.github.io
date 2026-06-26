@@ -1,0 +1,20 @@
+---
+const links = [
+  { href: "/iRacing", label: "Home" },
+  { href: "/iRacing/certificates", label: "Certificates" },
+  { href: "/iRacing/setup", label: "Sim Rig Setup" },
+  { href: "/iRacing/Stat-N-Track", label: 'Stat \'N\' Track'}
+];
+---
+
+<div class="text-blue-400 pb-2">
+  {
+    links.map(({ href, label }) => (
+      <span class="pr-2">
+        <a {href} data-astro-prefetch>
+          {label}
+        </a>
+      </span>
+    ))
+  }
+</div>
