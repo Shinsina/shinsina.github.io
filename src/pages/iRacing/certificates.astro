@@ -1,7 +1,7 @@
 ---
 import DefaultLayout from "$lib/layouts/default.astro";
 import IRacingNavigation from "$lib/components/iracing-navigation.astro";
-import Image from "astro/components/Image.astro";
+import { Image } from 'astro:assets';
 import Zero from '../../assets/0.png';
 import One from '../../assets/1.png';
 import Two from '../../assets/2.png';
@@ -48,7 +48,7 @@ import FourtyTwo from '../../assets/42.png';
 import FourtyThree from '../../assets/43.png';
 ---
 
-<DefaultLayout>
+<DefaultLayout title="Jacob Collins' iRacing Certificates" description="Certificates awarded to Jacob Collins on iRacing">
   <div
     class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid lg:grid-cols-4"
   >
