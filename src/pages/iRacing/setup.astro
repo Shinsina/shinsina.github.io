@@ -1,11 +1,11 @@
 ---
 import DefaultLayout from "$lib/layouts/default.astro";
-import Image from "astro/components/Image.astro";
+import { Image } from 'astro:assets';
 import IRacingNavigation from "$lib/components/iracing-navigation.astro";
 import SetupImage from '../../assets/setup.jpg';
 ---
 
-<DefaultLayout>
+<DefaultLayout title="Jacob Collins' Sim Rig Setup" description="All the details regarding Jacob Collins' sim rig setup">
   <div
     class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid lg:grid-cols-4"
   >
