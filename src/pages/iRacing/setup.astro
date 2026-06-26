@@ -1,6 +1,8 @@
 ---
 import DefaultLayout from "$lib/layouts/default.astro";
 import Image from "astro/components/Image.astro";
+import IRacingNavigation from "$lib/components/iracing-navigation.astro";
+import SetupImage from '../../assets/setup.jpg';
 ---
 
 <DefaultLayout>
@@ -9,19 +11,20 @@ import Image from "astro/components/Image.astro";
   >
     <div class="col-span-4 pt-20 px-4 bg-gray-900">
       <h1 class="text-7xl mb-4">PC and Rig Setup</h1>
+      <IRacingNavigation />
+      <Image class="m-auto" src={SetupImage} alt="Setup Picture" width="600" height="500" />
       <div class="grid md:grid-cols-3 bg-gray-900 py-4">
         <div>
           <h2 class="text-4xl mb-2">PC Specifications</h2>
           <ul>
-            <li class="list-inside list-disc">AMD Ryzen 7 7700X</li>
-            <li class="list-inside list-disc">ASUS TUF Gaming X670E-PLUS WIFI</li>
-            <li class="list-inside list-disc">G.SKILL Flare X5 Series 32GB (2 x 16GB) DDR5 5600</li>
+            <li class="list-inside list-disc">Intel Core i5-13600K</li>
+            <li class="list-inside list-disc">MSI PRO B760-P WIFI DDR4</li>
+            <li class="list-inside list-disc">Corsair Vengeance LPX 32GB (2 x 16GB) DDR4 3200</li>
             <li class="list-inside list-disc">PowerColor Hellhound Radeon RX 9070XT 16GB GDDR6</li>
-            <li class="list-inside list-disc">IceGiant ProSiphon Elite CPU Cooler</li>
+            <li class="list-inside list-disc">be quiet! Dark Rock Elite CPU Cooler</li>
             <li class="list-inside list-disc">be quiet! Straight Power 11 1200W 80 PLUS Platinum PSU</li>
             <li class="list-inside list-disc">Fractal Design Pop Air (Orange) Case</li>
-            <li class="list-inside list-disc">Gigabyte AORUS Gen4 1 TB SSD (Main Drive)</li>
-            <li class="list-inside list-disc">Western Digital WD_Black SN850X 4 TB (Storage Drive)</li>
+            <li class="list-inside list-disc">Western Digital WD_Black SN850X 4 TB</li>
             <li class="list-inside list-disc">2 be quiet! Silent Wings PRO 4 140MM front intake fans</li>
             <li class="list-inside list-disc">be quiet! Silent Wings 3 120mm rear exhaust fan</li>
             <li class="list-inside list-disc">LG Internal Optical Drive</li>
@@ -30,11 +33,10 @@ import Image from "astro/components/Image.astro";
         <div>
           <h2 class="text-4xl mb-2">Peripherials</h2>
           <ul>
-            <li class="list-inside list-disc">WASD Keyboards VP3 61-key Keyboard (Cherry MX Clears)</li>
-            <li class="list-inside list-disc">Glorious Gaming Cloth Ergonomic Keyboard Wrist Rest</li>
-            <li class="list-inside list-disc">Steelseries Aerox 9 Wireless Mouse (Main Mouse)</li>
+            <li class="list-inside list-disc">CannonKeys Link Split Ergo (Wireless, with Gateron Geckos)</li>
+            <li class="list-inside list-disc">SteelSeries Aerox 9 Wireless Mouse (Main Mouse)</li>
             <li class="list-inside list-disc">Finalmouse Starlight-12 Phantom (FPS Mouse)</li>
-            <li class="list-inside list-disc">Steelseries QcK Heavy XXL Mousepad</li>
+            <li class="list-inside list-disc">SteelSeries QcK Heavy XXL Mousepad</li>
             <li class="list-inside list-disc">Antlion Kimura Microphone Cable (2 Pin)</li>
             <li class="list-inside list-disc">TRUTHEAR x Crinacle ZERO:BLUE2 In-ear Monitor</li>
             <li class="list-inside list-disc">JCALLY JM6 Pro DAC Amp</li>
