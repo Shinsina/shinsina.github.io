@@ -1,0 +1,141 @@
+---
+import DefaultLayout from "$lib/layouts/default.astro";
+import Image from "astro/components/Image.astro";
+import Me from "../../assets/me.jpg";
+import IRacingNavigation from "$lib/components/iracing-navigation.astro";
+---
+
+<DefaultLayout>
+  <div
+    class="h-screen w-screen bg-gray-900 text-white text-center font-sans grid lg:grid-cols-12"
+  >
+    <div class="col-span-12 pt-20 px-4 bg-gray-900">
+      <h1 class="text-7xl mb-4">Jacob Collins</h1>
+      <IRacingNavigation />
+      <Image
+        class="inline-block"
+        src={Me}
+        alt="Jacob Collins"
+        width="160"
+        height="160"
+      />
+      <p class="text-gray-400 text-lg my-3">
+        Hello! I'm Jacob Collins, a wearer of many hats, a jack of all trades
+        and a master of none both on and off the virtual race track, welcome to
+        anything and everything related to me and my iRacing "career"!
+      </p>
+      <div class="grid md:grid-cols-4 bg-gray-900 py-4">
+        <div class="md:col-span-2">
+          <h2 class="text-4xl mb-4">Community Roles</h2>
+          <h3 class="text-2xl mb-2">Community Manager</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              Indy Pro 2000 - 2025 Season 2 to 2025 Season 4 (R.I.P)
+            </li>
+            <li class="list-inside list-disc">
+              USF 2000 - 2025 Season 2 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Jr Open Wheel Oval Challenge (JROWOC) - 2025 Season 2 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Legends Road Cup - 2025 Season 3 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT Oval - 2026 Season 1 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT Road - 2026 Season 3 to Present
+            </li>
+          </ul>
+          <h3 class="text-2xl mb-2">Host/Broadcaster (P1 Broadcasting)</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              IndyCar Open - 2025 Season 2 (Ovals Only), 2025 Season 3 to
+              Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT (Road and Oval Series) - 2025 Season 4 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Indy NXT Road Series Track Guides - 2026 Season 1 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Formula Super Series (FSS) Season 4
+            </li>
+          </ul>
+          <h3 class="text-2xl mb-2">Rogue Racing</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              Driver - 2024 Season 3 Week 4 to Present
+            </li>
+            <li class="list-inside list-disc">
+              Co-Captain - 2025 Season 3 to Present
+            </li>
+          </ul>
+          <h3 class="text-2xl mb-2">Votive Racing League</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">Driver - Season 3, Season 4, Season 5</li>
+            <li class="list-inside list-disc">Coach - April 2025 to Present</li>
+          </ul>
+          <h3 class="text-2xl mb-2">Moderator</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              iRacing IndyCar Community Discord - July 2025 to Present
+            </li>
+          </ul>
+        </div>
+        <div class="md:col-span-2">
+          <h2 class="text-4xl mb-2">Accolades</h2>
+          <h3 class="text-2xl mb-2">
+            iRacing USF 2000 Series Overall Champion
+          </h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">2024 Season 4</li>
+            <li class="list-inside list-disc">2025 Season 2</li>
+          </ul>
+          <h3 class="text-2xl mb-2">
+            iRacing Dirt Legends Cup Overall Champion
+          </h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">2026 Season 2</li>
+          </ul>
+          <h3 class="text-2xl mb-2">P1 Broadcasting Podium Finisher</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">
+              IndyCar Oval Fixed 2025 Season 2 Week 5 Race 2 Atlanta - 3rd
+            </li>
+            <li class="list-inside list-disc">
+              ISRA Open Wheel Series Season 2 Round 4 Kentucky - 2nd
+            </li>
+            <li class="list-inside list-disc">
+              Votive Racing League Season 3 Round 9 Indianapolis Motor Speedway - 2nd
+            </li>
+            <li class="list-inside list-disc">
+              Votive Racing League Season 4 Round 2 Charlotte Motor Speedway - 3rd
+            </li>
+          </ul>
+          <h3 class="text-2xl mb-2">Notable Overall Championship Positions</h3>
+          <ul class="mb-4">
+            <li class="list-inside list-disc">NASCAR Tour Modified Series Fixed 2023 Season 2 - 5th</li>
+            <li class="list-inside list-disc">Indy Pro 2000 2024 Season 4 - 4th</li>
+            <li class="list-inside list-disc">IndyCar Fixed (Fixed Sprint) 2024 Season 4 - 4th</li>
+            <li class="list-inside list-disc">IndyCar Oval Fixed 2025 Season 1 - 10th</li>
+            <li class="list-inside list-disc">Outlaw Micro Showdown 2025 Season 1 - 5th</li>
+            <li class="list-inside list-disc">USF 2000 2025 Season 1 - 3rd</li>
+            <li class="list-inside list-disc">Indy Pro 2000 2025 Season 1 - 2nd</li>
+            <li class="list-inside list-disc">IndyCar Oval Fixed 2025 Season 2 - 9th</li>
+            <li class="list-inside list-disc">Indy Pro 2000 2025 Season 3 - 5th</li>
+            <li class="list-inside list-disc">USF 2000 2025 Season 3 - 3rd</li>
+            <li class="list-inside list-disc">Legends Road Cup 2025 Season 4 - 5th</li>
+            <li class="list-inside list-disc">USF 2000 2025 Season 4 - 5th</li>
+            <li class="list-inside list-disc">Legends Road Cup 2026 Season 1 - 2nd</li>
+            <li class="list-inside list-disc">Legends Road Cup 2026 Season 2 - 3rd</li>
+            <li class="list-inside list-disc">ISRA Open Wheel Series Season 2 - 3rd</li>
+            <li class="list-inside list-disc">Votive Racing League Season 3 - 4th</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</DefaultLayout>
