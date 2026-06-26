@@ -1,5 +1,6 @@
 ---
 import DefaultLayout from "$lib/layouts/default.astro";
+import IRacingNavigation from "$lib/components/iracing-navigation.astro";
 import Image from "astro/components/Image.astro";
 import Zero from '../../assets/0.png';
 import One from '../../assets/1.png';
@@ -41,6 +42,10 @@ import ThirtySix from '../../assets/36.png';
 import ThirtySeven from '../../assets/37.png';
 import ThirtyEight from '../../assets/38.png';
 import ThirtyNine from '../../assets/39.png';
+import Fourty from '../../assets/40.png';
+import FourtyOne from '../../assets/41.png';
+import FourtyTwo from '../../assets/42.png';
+import FourtyThree from '../../assets/43.png';
 ---
 
 <DefaultLayout>
@@ -49,6 +54,7 @@ import ThirtyNine from '../../assets/39.png';
   >
     <div class="col-span-4 pt-20 px-4 bg-gray-900">
       <h1 class="text-7xl mb-4">Certificates</h1>
+      <IRacingNavigation />
       <div class="flex flex-col items-center gap-4">
         <div>
           <h2 class="text-4xl mb-2">2018</h2>
@@ -187,6 +193,18 @@ import ThirtyNine from '../../assets/39.png';
         </div>
         <div>
           <Image src={ThirtyNine} alt="iRacing Award" width="600" height="500" />
+        </div>
+        <div>
+          <Image src={Fourty} alt="iRacing Award" width="600" height="500" />
+        </div>
+        <div>
+          <Image src={FourtyOne} alt="iRacing Award" width="600" height="500" />
+        </div>
+        <div>
+          <Image src={FourtyTwo} alt="iRacing Award" width="600" height="500" />
+        </div>
+        <div>
+          <Image src={FourtyThree} alt="iRacing Award" width="600" height="500" />
         </div>
       </div>
     </div>
